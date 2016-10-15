@@ -1,0 +1,62 @@
+{
+	"name": "react-redux-isomorphic-starterkit",
+	"version": "1.0.0",
+	"description": "An isomorphic React boilerplate with Redux, Webpack (SASS/CSS loader, JSX/JS loader, File loader...), React Router, React Hot Loader and ESLint static code verification.",
+	"scripts": {
+		"postinstall": "npm run deploy",
+		"clean": "node ./bin/clean.js",
+		"server": "node ./bin/server",
+		"build": "npm run clean && node ./bin/bundler/prod.js",
+		"deploy": "npm run build && npm run server",
+		"watch": "npm run clean && node ./bin/bundler/dev.js && concurrent \"node ./bin/server/hotReload.js\" \"nodemon ./bin/server --watch dist -e js\" --kill-others"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ayoubdev/react-redux-isomorphic-starterkit.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ayoubdev/react-redux-isomorphic-starterkit/issues"
+	},
+	"keywords": [
+		"react",
+		"redux",
+		"webpack",
+		"react-router",
+		"boilerplate",
+		"starter",
+		"isomorphic",
+		"kit",
+		"starterkit",
+		"starter-kit"
+	],
+	"author": "Ayoub ADIB <ayoub.development@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"babel-core": "^6.9.0",
+		"babel-loader": "^6.2.4",
+		"babel-preset-es2015": "^6.9.0",
+		"babel-preset-react": "^6.5.0",
+		"concurrently": "^2.1.0",
+		"css-loader": "^0.23.1",
+		"del": "^2.2.0",
+		"eslint": "^2.11.0",
+		"eslint-plugin-react": "^5.1.1",
+		"extract-text-webpack-plugin": "^1.0.1",
+		"file-loader": "^0.8.5",
+		"fs": "0.0.2",
+		"node-sass": "^3.7.0",
+		"nodemon": "^1.9.2",
+		"react-hot-loader": "^1.3.0",
+		"sass-loader": "^3.2.0",
+		"style-loader": "^0.13.1",
+		"webpack": "^1.13.1",
+		"webpack-dev-server": "^1.14.1"
+	},
+	"dependencies": {
+		"compression": "^1.6.2",
+		"express": "^4.13.4",
+		"react": "^15.1.0",
+		"react-dom": "^15.1.0",
+		"react-router": "^2.4.1"
+	}
+}

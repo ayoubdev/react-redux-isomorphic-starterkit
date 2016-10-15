@@ -35,3 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Yarn lockfile (bad practise to exclude it from versionning (since it resolved 
+# non deterministic installation problem of npm) but since I used only yarn or npm 
+# install only for 1st installation, it's fine (first install is always deterministic 
+# on npm install (packages are install following alphabetic order)
+yarn.lock
