@@ -41,3 +41,7 @@ jspm_packages
 # install only for 1st installation, it's fine (first install is always deterministic 
 # on npm install (packages are install following alphabetic order)
 yarn.lock
+
+# Misc
+public
+dist
