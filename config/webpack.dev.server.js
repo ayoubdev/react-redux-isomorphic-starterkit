@@ -9,12 +9,12 @@ var loaders = [{
 		presets: [
 			//modules: false pour avertir Babel de ne pas transformer en targettant commonjs (via transform-es2015-modules-commonjs)
 			//permettant ainsi de laisser Webpack gérer le tree shaking ES6 (commonjs n'est pas compatible avec le tree shaking process):
-			
+
 			//Pour rappel, le tree shaking est un processus de bundling permettant d'éliminer 
 			//du code non utilisé en se basant sur la gestion des modules ES2015 (import/export)
 			//ce que ne permet pas commonjs ou autre gestionnaire de module < ES2015 (cf. https://github.com/rollup/rollup#dont-minifiers-already-do-this)
 			//Le tree shaking permet donc d'éliminer tout code non utilisé (par exemple, une fonction exportée mais non importée...):
-			[ "es2015", {modules: false} ],
+			["es2015", { modules: false }],
 			"react"
 		],
 		plugins: [

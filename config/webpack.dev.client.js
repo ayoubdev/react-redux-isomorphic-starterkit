@@ -7,7 +7,7 @@ var loaders = [{
 	loader: "babel",
 	query: {
 		presets: [
-			[ "es2015", {modules: false} ],
+			["es2015", { modules: false }],
 			"react"
 		],
 		plugins: [
@@ -69,7 +69,7 @@ var client = {
 		"client.bundle": [
 			//cf. configuration React Hot Loader 3.X: 
 			//https://github.com/gaearon/react-hot-loader/issues/243#issuecomment-211957140
-         		"react-hot-loader/patch",
+			"react-hot-loader/patch",
 			"webpack/hot/only-dev-server",
 			"webpack-dev-server/client?http://localhost:8081",
 			shared.APP_DIR + "/client"

@@ -18,7 +18,7 @@ class App extends React.Component {
 
 	render() {
 		console.log(this.state.toto);
-		return(
+		return (
 			<div onClick={() => this.onClick()}>
 				<p> App Container </p>
 				{this.props.children}
